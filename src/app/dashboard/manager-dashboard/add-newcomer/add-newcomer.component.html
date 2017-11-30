@@ -1,0 +1,48 @@
+<div class="container">
+  <p class="display-3 text-center">Register Newcomer data</p>
+  <form [formGroup]="newcomerForm">
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <label>Newcomer first name</label>
+          <input type="text" class="form-control" formControlName="firstName" placeholder="first Name">
+          <small class="form-text text-danger text-small" *ngIf="newcomerForm.controls.firstName.invalid && newcomerForm.controls.firstName.touched">First name is required</small>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-group">
+          <label>Newcomer last name</label>
+          <input type="text" class="form-control" formControlName="lastName" placeholder="Last Name">
+          <small class="form-text text-danger text-small" *ngIf="newcomerForm.controls.lastName.invalid && newcomerForm.controls.lastName.touched">Last name is required</small>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="email" class="form-control" formControlName="email" placeholder="name@example.com">
+          <small class="form-text text-danger text-small" *ngIf="newcomerForm.controls.email.invalid && (newcomerForm.controls.email.dirty || newcomerForm.controls.email.touched)">Please enter valid vodafone email.</small>
+        </div>
+      </div>
+      <div class="col-12" formGroupName="capability">
+        <div class="form-group">
+          <label>select capability</label>
+          <select class="form-control" (change)="changeSelectedCapability($event.target)" formControlName="id">
+            <option *ngFor="let capability of capabilities; let ci = index" [value]="capability.id">{{capability.name}}</option>
+          </select>
+        </div>
+        <div class="form-group" *ngIf="capabilities[selectedCapabilityIndex]">
+          <label>Example multiple select</label>
+          <select formControlName="tasks" [multiple]="true" class="form-control" [ngStyle]="{'height': capabilities.length!=0 ?  ((capabilities[selectedCapabilityIndex].tasks.length*25)+'px'): 'auto'}">
+            <option *ngFor="let task of capabilities[selectedCapabilityIndex].tasks; let ti = index" [value]="task.id">{{task.name}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-12 mb-4">
+        <button type="button" (click)="onAddNewcomer()" class="btn btn-primary btn-lg btn-block">Submit newcomer data</button>
+      </div>
+      <div class="col-12 mb-4">
+        <button type="button" (click)="addNewCapability()" class="btn btn-outline-primary btn-block">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,249 @@
+{
+  "capabilities": [
+    {
+      "id": 0,
+      "name": "Angular",
+      "tasks": [
+        {
+          "id": 0,
+          "name": "Angular tasks 0 string",
+          "state": "open",
+          "description": "Angular description 0 string"
+        },
+        {
+          "id": 1,
+          "name": "Angular tasks 1 string",
+          "state": "open",
+          "description": "Angular description 1 string"
+        },
+        {
+          "id": 2,
+          "name": "Angular tasks 2 string",
+          "state": "open",
+          "description": "Angular description 2 string"
+        },
+        {
+          "id": 3,
+          "name": "Angular tasks 3 string",
+          "state": "open",
+          "description": "Angular description 3 string"
+        },
+        {
+          "id": 4,
+          "name": "Angular tasks 4 string",
+          "state": "open",
+          "description": "Angular description 4 string"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "React",
+      "tasks": [
+        {
+          "id": 0,
+          "name": "React tasks 0 string",
+          "state": "open",
+          "description": "React description 0 string"
+        },
+        {
+          "id": 1,
+          "name": "React tasks 1 string",
+          "state": "open",
+          "description": "React description 1 string"
+        },
+        {
+          "id": 2,
+          "name": "React tasks 2 string",
+          "state": "open",
+          "description": "React description 2 string"
+        },
+        {
+          "id": 3,
+          "name": "React tasks 3 string",
+          "state": "open",
+          "description": "React description 3 string"
+        },
+        {
+          "id": 4,
+          "name": "React tasks 4 string",
+          "state": "open",
+          "description": "React description 4 string"
+        },
+        {
+          "id": 5,
+          "name": "React tasks 5 string",
+          "state": "open",
+          "description": "React description 4 string"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Angular 5",
+      "tasks": [
+        {
+          "id": 0,
+          "name": "Angular tasks 0 string",
+          "state": "open",
+          "description": "Angular description 0 string"
+        },
+        {
+          "id": 1,
+          "name": "Angular tasks 1 string",
+          "state": "open",
+          "description": "Angular description 1 string"
+        },
+        {
+          "id": 2,
+          "name": "Angular tasks 2 string",
+          "state": "open",
+          "description": "Angular description 2 string"
+        },
+        {
+          "id": 3,
+          "name": "Angular tasks 3 string",
+          "state": "open",
+          "description": "Angular description 3 string"
+        },
+        {
+          "id": 4,
+          "name": "Angular tasks 4 string",
+          "state": "open",
+          "description": "Angular description 4 string"
+        }
+      ]
+    }
+  ],
+  "newcomers": [
+    {
+      "id": 0,
+      "first_name": "Beshoy",
+      "last_name": "Refky",
+      "email": "beshoy.refky@hotmail.com",
+      "password": "123456",
+      "capability": {
+        "id": 1,
+        "name": "React",
+        "tasks": [
+          {
+            "id": 0,
+            "name": "React tasks 0 string",
+            "state": "open",
+            "description": "React description 0 string"
+          },
+          {
+            "id": 1,
+            "name": "React tasks 1 string",
+            "state": "open",
+            "description": "React description 1 string"
+          },
+          {
+            "id": 2,
+            "name": "React tasks 2 string",
+            "state": "open",
+            "description": "React description 2 string"
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "first_name": "Ali",
+      "last_name": "mansour",
+      "email": "Ali.mansour@yahoo.com",
+      "password": "123456",
+      "capability": {
+        "id": 0,
+        "name": "Angular",
+        "tasks": [
+          {
+            "id": 0,
+            "name": "Angular tasks 0 string",
+            "state": "open",
+            "description": "Angular description 0 string"
+          },
+          {
+            "id": 1,
+            "name": "Angular tasks 1 string",
+            "state": "open",
+            "description": "Angular description 1 string"
+          },
+          {
+            "id": 2,
+            "name": "Angular tasks 2 string",
+            "state": "open",
+            "description": "Angular description 2 string"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "firstName": "sadasdsad",
+      "lastName": "asdasd",
+      "email": "asdasd",
+      "password": "123456",
+      "startDate": 1511969236155,
+      "capability": {
+        "id": "2",
+        "name": "null",
+        "tasks": [
+          2,
+          3
+        ]
+      },
+      "tasks": [
+        {
+          "id": 2,
+          "name": "Angular tasks 2 string",
+          "state": "open",
+          "description": "Angular description 2 string"
+        },
+        {
+          "id": 3,
+          "name": "Angular tasks 3 string",
+          "state": "open",
+          "description": "Angular description 3 string"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "firstName": "nshs",
+      "lastName": "bsdmgsd",
+      "email": "SDSDGSsdsd@vodafone.com",
+      "password": "123456",
+      "startDate": 1511969830792,
+      "capability": {
+        "id": "2",
+        "name": "null",
+        "tasks": [
+          2,
+          3,
+          4
+        ]
+      },
+      "tasks": [
+        {
+          "id": 2,
+          "name": "Angular tasks 2 string",
+          "state": "open",
+          "description": "Angular description 2 string"
+        },
+        {
+          "id": 3,
+          "name": "Angular tasks 3 string",
+          "state": "open",
+          "description": "Angular description 3 string"
+        },
+        {
+          "id": 4,
+          "name": "Angular tasks 4 string",
+          "state": "open",
+          "description": "Angular description 4 string"
+        }
+      ]
+    }
+  ]
+}

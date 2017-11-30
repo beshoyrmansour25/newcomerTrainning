@@ -1,0 +1,33 @@
+<div class="card border-primary ">
+  <div class="card-header">
+    <div class="lead d-flex flex-row justify-content-between">
+      <a>Anglular 5</a>
+      <p>1 of 3</p>
+    </div>
+  </div>
+  <div class="list-group list-group-flush">
+    <nc-single-item 
+    taskName="this is some text sent from newcomer dashboard templete" 
+    TaskState="open" 
+    [id]="i"
+    btnText="change state"
+    ></nc-single-item>
+    <nc-single-item 
+    taskName="this is some text sent from newcomer dashboard templete" 
+    TaskState="in progress"
+    [id]="i"
+    ></nc-single-item>
+    <nc-single-item 
+    taskName="this is some text sent from newcomer dashboard templete as newcomer" 
+    TaskState="resolved" 
+    [id]="i"
+    btnText="change state"
+    ></nc-single-item>
+    <nc-single-item 
+    taskName="this is some text sent from newcomer dashboard templete as sme" 
+    TaskState="resolved"
+    [id]="i" user="sme" 
+    btnText="change state"
+    ></nc-single-item>
+  </div>
+</div>

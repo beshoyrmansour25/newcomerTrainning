@@ -1,0 +1,42 @@
+<div class="container">
+  <p class="display-3 text-center">Register Newcomer data</p>
+  <form>
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <label>Newcomer name</label>
+          <input type="text" class="form-control" placeholder="firstName LastName">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="email" class="form-control" placeholder="name@example.com">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-group">
+          <label>select capability</label>
+          <select class="form-control">
+            <option *ngFor="let capability of capabilities">{{capability}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-group">
+          <label>Example multiple select</label>
+          <select multiple class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

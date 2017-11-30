@@ -1,0 +1,14 @@
+<div [ngStyle]="{'cursor':((TaskState !='resolved' && user=='newcomer')|| ( user=='sme')) ? 'pointer' : 'not-allowed' }"
+ class="list-group-item list-group-item-action list-group-item-primary d-flex flex-row" 
+ (click)="btnAction(TaskState,user,id)">
+  <div class="mr-auto lead " [ngClass]="{'disabled text-muted font-italic': TaskState =='resolved','font-weight-bold':TaskState =='in progress'}">
+    {{taskName}}
+  </div>
+  <div [ngClass]="{disabled: TaskState!='resolved'}">
+    <span class="badge  mb-2 d-block" [ngClass]="{
+      'badge-primary': TaskState =='open',
+      'badge-info': TaskState =='in progress',
+      'badge-success': TaskState =='resolved'}">{{TaskState}}</span>
+    <button type="button" class="btn btn-sm btn-block btn-outline-primary mt-2" (click)="btnAction(TaskState,user,id)" *ngIf="!(TaskState =='resolved' && user=='newcomer')" [disabled]="(TaskState =='resolved' && user=='newcomer')">{{btnText}}</button>
+  </div>
+</div>
