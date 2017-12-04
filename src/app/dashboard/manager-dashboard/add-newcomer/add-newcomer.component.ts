@@ -87,6 +87,10 @@ export class AddNewcomerComponent implements OnInit {
     console.log(newcomer);
   }
 
+  private Checker(){
+    console.log(this.newcomerForm.value)
+  }
+
   private addNewCapability() {
     const newCapability = {
       name: 'Angular5',

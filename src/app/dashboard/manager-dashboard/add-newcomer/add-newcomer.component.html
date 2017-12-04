@@ -10,11 +10,19 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="form-group">
+       <!-- aaaa {{newcomerForm.controls['lastName'].value}} -->
+        <nc-text-input 
+        [isPassword]="true"
+        placeholder="value"
+        errorMsg="value"
+        label="value"
+        patternKey="password"
+         formControlName="lastName" ></nc-text-input>
+        <!-- <div class="form-group">
           <label>Newcomer last name</label>
-          <input type="text" class="form-control" formControlName="lastName" placeholder="Last Name">
+          <input type="text" class="form-control" placeholder="Last Name">
           <small class="form-text text-danger text-small" *ngIf="newcomerForm.controls.lastName.invalid && newcomerForm.controls.lastName.touched">Last name is required</small>
-        </div>
+        </div> -->
       </div>
       <div class="col-12">
         <div class="form-group">
@@ -41,7 +49,7 @@
         <button type="button" (click)="onAddNewcomer()" class="btn btn-primary btn-lg btn-block">Submit newcomer data</button>
       </div>
       <div class="col-12 mb-4">
-        <button type="button" (click)="addNewCapability()" class="btn btn-outline-primary btn-block">Submit</button>
+        <button type="button" (click)="Checker()" class="btn btn-outline-primary btn-block">Submit</button>
       </div>
     </div>
   </form>

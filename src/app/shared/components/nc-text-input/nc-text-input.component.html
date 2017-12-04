@@ -1,0 +1,9 @@
+<label>{{label}}</label>
+<div class="input-group">
+  <input [type]="type" class="form-control"  [(ngModel)]='value'  [placeholder]="placeholder">
+  <span class="input-group-btn">
+      <button class="btn btn-primary" *ngIf="isPassword" type="button"(click)="showPassword()">Password Toggle</button>
+    </span>
+  </div>
+  <small class="form-text text-danger text-small" *ngIf="(isValid && isTouched)" >{{errorMsg}}</small>
+  

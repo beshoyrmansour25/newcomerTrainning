@@ -7,6 +7,7 @@ import { SharedRoutingModule } from './shared-routing.module';
 import { SingleItemComponent } from './components/single-item/single-item.component';
 import { NcNavbarComponent } from './components/nc-navbar/nc-navbar.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { NcTextInputComponent } from './components/nc-text-input/nc-text-input.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,7 @@ import { TranslateModule } from '@ngx-translate/core';
     SharedRoutingModule,
     CollapseModule.forRoot(),
   ],
-  exports: [NcNavbarComponent, SingleItemComponent, FormsModule, ReactiveFormsModule, TranslateModule],
-  declarations: [SingleItemComponent, NcNavbarComponent]
+  exports: [NcNavbarComponent, SingleItemComponent, FormsModule, ReactiveFormsModule, TranslateModule, NcTextInputComponent],
+  declarations: [SingleItemComponent, NcNavbarComponent, NcTextInputComponent]
 })
 export class SharedModule { }
